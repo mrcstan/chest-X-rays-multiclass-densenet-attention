@@ -3,7 +3,7 @@
 Marcus Hwai Yik Tan, Xiaohan Tian, Wing Chan, Joshua Ceaser  
 University of Illinois, Urbana-Champaign
 
-## Quick Startn
+## Quick Start
 - Set ALL_IMAGE_DIR to the folder containing the X-ray images
 - Set BASE_PATH_LABELS to the folder containing the lists of training, validation and test image file names
 - Run either of the following notebooks: 
