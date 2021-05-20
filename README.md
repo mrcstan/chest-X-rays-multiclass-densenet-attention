@@ -3,13 +3,7 @@
 Marcus Hwai Yik Tan, Xiaohan Tian, Wing Chan, Joshua Ceaser  
 University of Illinois, Urbana-Champaign
 
-## Quick Start for binary classification
-
-- Put all unzipped images into BASE_PATH/images, you can modify the BASE_PATH in each notebook.
-- Put Data_Entry_2017_v2020.csv directly inside of BASE_PATH.
-- Inside of each notebook, please update BASE_PATH/ALL_IMAGE_DIR/BASE_PATH_LABELS to match your own environment before execution.
-
-## Quick Start for multi-label classification
+## Quick Startn
 - Set ALL_IMAGE_DIR to the folder containing the X-ray images
 - Set BASE_PATH_LABELS to the folder containing the lists of training, validation and test image file names
 - Run either of the following notebooks: 
@@ -20,12 +14,6 @@ University of Illinois, Urbana-Champaign
   
 
 ## Guide
-
-### For binary(pneumonia) classification, execute the following notebooks in order:  
-- __p01-multi-hot-encoding.ipynb__: Pre-processing the original `Data_Entry_2017_v2020.csv`, convert it into multi-hot encoding
-- __p02-dataset-selection.ipynb__: Random select images for binary(penumonia) classification, and generate train/val/test list
-- __p03-prepare-data.ipynb__: Prepare correct folder structure for `torch.datasets.ImageFolder` and copy related images to destination folder
-- __t01-densenet121-pneumonia.ipynb__: Train a binary classification model based on a DenseNet-121 or ResNet-50 based model with Attention Module integrated.  
 
 ### For multi-label classification:
 - __p02-dataset-selection-multilabel.ipynb__: This notebook can be skipped since the files containing the lists of selected images for the final report are already included in the "labels" folder. The files are train_val_A.csv, train_A_x.csv (x=1,2,3), val_A_x.csv (x=1,2,3) and test_A.csv. This notebook selects a subset of images for training, validation and test lists. Multiple training/validation splits are generated. The default folder is "labels", where Data_Entry_2017_v2020.csv is also located.
